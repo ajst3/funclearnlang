@@ -12,14 +12,15 @@ class TokenList {
 private:
   int capacity;
   int current;
-  struct Token *tokens;
+  struct token **tokens;
   void resize();
 
 public:
   TokenList();
   void addToken(struct token *toadd);
   struct token *getToken(int index);
-  ~Token();
+  void printTokenList();
+  ~TokenList();
 
 };
 
