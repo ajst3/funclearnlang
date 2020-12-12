@@ -4,9 +4,9 @@ CPPFLAGS = -Wall -c
 CXX = g++
 INCLUDES = -Ilib
 
-all: lexer
+all: lexer.o
 
-lexer: lexer.o
+lexer.o: tokenlist.o
 
 .cpp.o:
 	$(CXX) $(CPPFLAGS) $(INCLUDES) $^

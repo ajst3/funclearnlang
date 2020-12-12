@@ -1,9 +1,9 @@
 CPPFLAGS = -Wall
 CXX = g++
 LIBDIR = -L..
-LIBS = -lcompilerlib
-INCLUDES = -I../compiler/lib
-OBJECTS = lexertest
+LIBS = -lcompiler
+INCLUDES = -I../src/
+OBJECTS = basiclexertest
 
 .cpp:
 	$(MAKE) -C ..
