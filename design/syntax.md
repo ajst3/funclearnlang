@@ -27,17 +27,15 @@ Initializes variable_name to integer 1
 ## Functions  
   - Define Function  
     ```   
-    func_name := (parameter1, parameter2) {
+    func_name = (parameter1, parameter2)
       function code
-    }
     ```
   - Function Call
     ```
-    result_var := (argument1, argument2) -> func_name
+    result_var = (argument1, argument2) -> func_name
     ```
   - Anonymous Functions  
     ```
-    result_var := (argument1, argument2) -> (parameter1, parameter2) {
+    result_var = (argument1, argument2) -> (parameter1, parameter2)
       function code
-    }
     ```
