@@ -48,6 +48,16 @@ void TokenList::printTokenList() {
   }
 }
 
+int TokenList::size() {
+  return current;
+}
+
+struct token* TokenList::remove() {
+  struct token *last = tokens[current];
+  current -= 1;
+  return last;
+}
+
 TokenList::~TokenList() {
   free(tokens);
 }

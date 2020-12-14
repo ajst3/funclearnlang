@@ -20,6 +20,8 @@ public:
   void addToken(struct token *toadd);
   struct token *getToken(int index);
   void printTokenList();
+  int size();
+  struct token *remove();
   ~TokenList();
 
 };
