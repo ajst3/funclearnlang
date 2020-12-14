@@ -10,7 +10,7 @@ private:
 public:
   Stack();
   void push(struct token *toadd);
-  //struct token *pop();
+  struct token *pop();
 }
 
 #endif

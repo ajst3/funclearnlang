@@ -15,6 +15,10 @@ void Stack::push(struct token *toadd) {
   addToken(toadd);
 }
 
+struct token* Stack::pop() {
+  return remove();
+}
+
 Stack::~Stack() {
-  
+
 }
