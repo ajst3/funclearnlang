@@ -9,7 +9,12 @@ enum lexertype {
   LEFT_PAREN,
   RIGHT_PAREN,
   ENDLINE,
-  ENDPROGRAM
+  ENDPROGRAM,
+
+  // Combination types (used by parser)
+  STATEMNT,
+  ASSIGNMENT,
+  FUNCTIONCALL
 };
 
 #endif
